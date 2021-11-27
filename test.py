@@ -85,5 +85,5 @@ class D2ruViewsScrapper:
         link = self.find_user_profile(user_to_scrapp)
         link.click()
         self.check_is_user_page_valid(user_to_scrapp)
-        return self.get_count_of_views()
+        return int(self.get_count_of_views())
 
